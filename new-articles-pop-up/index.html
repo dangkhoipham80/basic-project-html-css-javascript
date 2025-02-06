@@ -8,26 +8,27 @@
     <!-- Thêm favicon -->
     <link rel="icon" href="../images/favicon-1.svg" type="image/svg+xml">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- cdnjs.cloudflare.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <a class="button" onclick="toggleNewsLetter()">Follow My YouTube Channel</a>
+    <a class="button" onclick="toggleNewsLetter()">Subcribe</a>
     <div class="hidden" id="newsLetter">
         <h2>Join Us</h2>
         <p>Join my community to see more exciting videos and content.</p>
         <div class="box">
-            <input type="email" placeholder="Enter Email to Subscribe"/>
+            <input type="email" placeholder="Enter Email"/>
         </div>
         <div class="box">
             <button type="submit">Subscribe</button>
         </div>
+        <a class="close" onclick="toggleNewsLetter()">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </a>
     </div>
-    <a class="close" onclick="toggleNewsLetter()">
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </a>
     
-    <script src="script.js"></script>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
